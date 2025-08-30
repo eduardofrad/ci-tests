@@ -20,6 +20,9 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: Tornar gradlew executável
+        run: chmod +x gradlew
+
       - name: Cache do Gradle
         uses: actions/cache@v3
         with:
